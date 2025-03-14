@@ -20,25 +20,9 @@ languageName = "English"
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Posts"
+    name = "posts"
     url = "/posts/"
     # title will be shown when you hover on this menu link
-    title = ""
-  [[menu.main]]
-    weight = 2
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "Tags"
-    url = "/tags/"
-    title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
     title = ""
 
 # Markup related configuration in Hugo
@@ -47,3 +31,78 @@ languageName = "English"
   [markup.highlight]
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+# whether to use git commit log
+enableGitInfo = true
+
+# Author config
+  [params.author]
+    name = "Alejandro Villate"
+
+# Header config
+  [params.header]
+    # LoveIt NEW | 0.2.0 Header title config
+    [params.header.title]
+      # title name
+      name = "blog"
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = "@ aleguy02.dev"
+
+# Social config about the author
+  [params.social]
+    GitHub = "aleguy02"
+    Linkedin = "alejandrovillate1"
+    Youtubechannel = "UCZbAl-d58jWJ_q5TFSJJYiA"
+
+ # LoveIt CHANGED | 0.2.0 Page global config
+  [params.page]
+    [params.page.share]
+      enable = true
+      X = false
+      Threads = false
+      Facebook = false
+      Linkedin = true
+      Whatsapp = false
+      Pinterest = false
+      Tumblr = false
+      HackerNews = false
+      Reddit = false
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = false
+      Instapaper = false
+      Pocket = false
+      Flipboard = false
+      Weibo = false
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Diaspora = false # LoveIt NEW | 0.3.1
+      Mix = false
+      Telegram = false # LoveIt NEW | 0.3.1
+
+  # LoveIt NEW | 0.2.5 TypeIt config
+  [params.typeit]
+    # typing speed between each step (measured in milliseconds)
+    # My average typing speed is 80 wpm, so I did the math to find the speed here
+    speed = 150
+    # blinking speed of the cursor (measured in milliseconds)
+    cursorSpeed = 2500
+    # character used for the cursor (HTML format is supported)
+    cursorChar = "."
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+    duration = -1
+  
+  # Home page profile
+    [params.home.profile]
+      enable = true
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = "Hello world"
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+      disclaimer = "I like writing about what I'm learning"
